@@ -1,0 +1,56 @@
+.header {
+  background-image: url("../img/header-bg-desk.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: center;
+  height: 650px;
+  &__menu {
+    display: flex;
+    column-gap: 33px;
+
+    &-item {
+      color: #f9fbfd;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      align-items: center;
+      display: flex;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 35px;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+    display: flex;
+    align-items: center;
+    margin-top: 210px;
+    color: #f9fbfd;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    &-desc {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 24px;
+      display: flex;
+      color: #f9fbfd;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      padding-top: 10px;
+    }
+
+    &-wrapper{
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+    }
+  }
+}

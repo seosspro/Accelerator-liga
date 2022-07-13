@@ -1,0 +1,30 @@
+.travel {
+  display: flex;
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 150%;
+    color: #011c40;
+  }
+
+  &__badge {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #011c40;
+  }
+
+  &__wrapper{
+    margin-top: 186px;
+  }
+
+  &__img{
+    margin-top: 120px;
+    margin-bottom: 120px;
+    margin-left: 88px;
+  }
+
+}
