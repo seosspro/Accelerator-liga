@@ -1,0 +1,15 @@
+.trips {
+  width: 260px;
+  height: 386px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  &__card {
+    &-wrapper {
+      display: none;
+    }
+  }
+}

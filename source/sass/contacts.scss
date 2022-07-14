@@ -1,0 +1,44 @@
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 120px;
+  margin-bottom: 120px;
+
+  &__badge {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #011c40;
+    margin-bottom: 40px;
+  }
+
+  &__address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #011c40;
+    text-decoration: none;
+    margin-bottom: 25px;
+  }
+
+  &__number {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #011c40;
+    text-decoration: none;
+  }
+
+  &__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__svg{
+    margin-right: 10px;
+  }
+}
