@@ -33,7 +33,7 @@ const css = () => {
 };
 
 const js = () => {
-  return gulp.src(['source/js/main.js'])
+  return gulp.src(['source/js/script.js'])
       .pipe(webpackStream(webpackConfig))
       .pipe(gulp.dest('build/js'))
 };
