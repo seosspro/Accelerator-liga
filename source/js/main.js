@@ -1,54 +1,111 @@
-function init() {
-  let map = new ymaps.Map("map", {
-    center: [59.9387, 30.323004],
-    zoom: 16,
+'use strict';
+
+(function () {
+
+
+  var navMain = document.querySelector('.main-nav');
+  var navToggle = document.querySelector('.main-nav__toggle');
+  var logoMenu = document.querySelector('.logo-menu');
+
+  navMain.classList.remove('main-nav--nojs');
+
+  navToggle.addEventListener('click', function () {
+    if (navMain.classList.contains('main-nav--closed'
+    )) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+      logoMenu.classList.remove('logo-menu--closed');
+      logoMenu.classList.add('logo-menu--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+      logoMenu.classList.add('logo-menu--closed');
+      logoMenu.classList.remove('logo-menu--opened');
+    }
   });
-}
 
-ymaps.ready(init);
 
-import { iosVhFix } from "./utils/ios-vh-fix";
-import { initModals } from "./modules/modals/init-modals";
+  window.addEventListener('DOMContentLoaded', function () {
+    var inputs = document.querySelectorAll('input[type="tel"]');
+    Array.prototype.forEach.call(inputs, function (input) {
+      new InputMask({
+        selector: input,
+        layout: input.dataset.mask
+      })
+    })
 
-// ---------------------------------
+  })
 
-window.addEventListener("DOMContentLoaded", () => {
-  // Utils
-  // ---------------------------------
+  function InputMask(options) {
+    this.el = this.getElement(options.selector);
+    if (!this.el) return console.log('Что-то не так с селектором');
+    this.layout = options.layout || '+_ (___) ___-__-__';
+    this.maskreg = this.getRegexp();
 
-  iosVhFix();
+    this.setListeners();
+  }
 
-  // Modules
-  // ---------------------------------
+  InputMask.prototype.getRegexp = function () {
+    var str = this.layout.replace(/_/g, '\\d');
+    str = str.replace(/\(/g, '\\(');
+    str = str.replace(/\)/g, '\\)');
+    str = str.replace(/\+/g, '\\+');
+    str = str.replace(/\s/g, '\\s');
 
-  // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
-  // в load следует добавить скрипты, не участвующие в работе первого экрана
-  window.addEventListener("load", () => {
-    initModals();
-  });
-});
+    return str;
+  };
 
-// ---------------------------------
+  InputMask.prototype.mask = function (e) {
+    var _this = e.target,
+        matrix = this.layout,
+        i = 0,
+        def = matrix.replace(/\D/g, ""),
+        val = _this.value.replace(/\D/g, "");
 
-// ❗❗❗ обязательно установите плагины eslint, stylelint, editorconfig в редактор кода.
+    if (def.length >= val.length) val = def;
 
-// привязывайте js не на классы, а на дата атрибуты (data-validate)
+    _this.value = matrix.replace(/./g, function(a) {
+        return /[_\d]/.test(a) && i < val.length ? val.charAt(i++) : i >= val.length ? '' : a
+    });
 
-// вместо модификаторов .block--active используем утилитарные классы
-// .is-active || .is-open || .is-invalid и прочие (обязателен нейминг в два слова)
-// .select.select--opened ❌ ---> [data-select].is-open ✅
+    if (e.type == 'blur') {
+      var regexp = new RegExp(this.maskreg);
+      if (!regexp.test(_this.value)) _this.value = '';
+    } else {
+      this.setCursorPosition(_this.value.length, _this);
+    }
+  };
 
-// выносим все в дата атрибуты
-// url до иконок пинов карты, настройки автопрокрутки слайдера, url к json и т.д.
+  InputMask.prototype.setCursorPosition = function (pos, elem) {
+    elem.focus();
+    if (elem.setSelectionRange) elem.setSelectionRange(pos, pos);
+    else if (elem.createTextRange) {
+      var range = elem.createTextRange();
+      range.collapse(true);
+      range.moveEnd("character", pos);
+      range.moveStart("character", pos);
+      range.select();
+    }
+  };
 
-// для адаптивного JS используейтся matchMedia и addListener
-// const breakpoint = window.matchMedia(`(min-width:1024px)`);
-// const breakpointChecker = () => {
-//   if (breakpoint.matches) {
-//   } else {
-//   }
-// };
-// breakpoint.addListener(breakpointChecker);
-// breakpointChecker();
+  InputMask.prototype.setListeners = function () {
+    this.el.addEventListener("input", this.mask.bind(this), false);
+    this.el.addEventListener("focus", this.mask.bind(this), false);
+    this.el.addEventListener("blur", this.mask.bind(this), false);
+  }
 
-// используйте .closest(el)
+  InputMask.prototype.getElement = function (selector) {
+    if (selector === undefined) return false;
+    if (this.isElement(selector)) return selector;
+    if (typeof selector === 'string') {
+      var el = document.querySelector(selector);
+      if (this.isElement(el)) return el;
+    }
+    return false;
+  };
+
+  InputMask.prototype.isElement = function (element) {
+    return element instanceof Element || element instanceof HTMLDocument;
+  };
+
+})();
