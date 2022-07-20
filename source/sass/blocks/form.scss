@@ -5,11 +5,11 @@
   padding-left: 50px;
   padding-right: 50px;
 
-  background-color: #011C40;
+  background-color: #011c40;
   box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form {
     width: 100%;
     padding-top: 37px;
@@ -26,10 +26,10 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .booking__form p {
     line-height: 25px;
     text-align: center;
@@ -49,19 +49,18 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
-  color: #011C40;
+  color: #011c40;
 
-  background-color: #F9FBFD;;
+  background-color: #f9fbfd;
 
   border: none;
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form__field input {
     width: 100%;
   }
 }
-
 
 .form__field input:hover {
   opacity: 0.8;
@@ -70,7 +69,6 @@
 .form__field input:active {
   opacity: 0.5;
 }
-
 
 .form__field-check {
   position: relative;
@@ -88,8 +86,7 @@
   padding-left: 23px;
 }
 
-
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form__field-check label {
     padding-top: 0;
     padding-left: 30px;
@@ -100,7 +97,7 @@
   font-weight: normal;
   font-size: 10px;
   line-height: 13px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .form__field label:hover {
@@ -108,7 +105,7 @@
   cursor: pointer;
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form__field label {
     line-height: 12px;
   }
@@ -123,7 +120,7 @@
   width: 18px;
   height: 18px;
 
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   cursor: pointer;
 }
 
@@ -136,11 +133,11 @@
   width: 18px;
   height: 18px;
 
-  background-color: rgba(249, 251, 253, 0.8);;
+  background-color: rgba(249, 251, 253, 0.8);
   cursor: pointer;
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form__checkbox + label::before {
     width: 20px;
     height: 20px;
@@ -170,7 +167,7 @@
   cursor: pointer;
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form__checkbox:checked + label::after {
     top: 6px;
     left: 5px;
@@ -197,9 +194,9 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  color: #011C40;
+  color: #011c40;
 
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   border: none;
   cursor: pointer;
 }
@@ -217,7 +214,7 @@
   min-width: 126px;
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .form__button {
     width: 100%;
     margin-top: 26px;
