@@ -447,7 +447,7 @@ body {
 }
 
 .container {
-  max-width: 1366px;
+  max-width: 1365px;
   margin: 0 auto;
 }
 
@@ -575,7 +575,7 @@ body {
 }
 
 .description__br {
-  display: block;
+  display: none;
 }
 
 .description__br-tab {
@@ -631,11 +631,19 @@ body {
   padding-bottom: 79px;
   padding-right: 0;
   padding-left: 103px;
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
   background-image: url("../img/landscape-2-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
   background-size: cover;
+}
+
+.features__br {
+  display: none;
+}
+
+.features__br-tab {
+  display: none;
 }
 
 .features__wrapper {
@@ -661,7 +669,7 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .features__list {
@@ -685,7 +693,7 @@ body {
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 23px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .list-features__item--ship .list-features__icon {
@@ -709,7 +717,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .list-features__item p {
@@ -717,7 +725,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .catalog {
@@ -955,6 +963,10 @@ body {
   background-size: cover;
 }
 
+.booking__br {
+  display: none;
+}
+
 .booking__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -986,7 +998,7 @@ body {
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .booking__description p {
@@ -995,7 +1007,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .booking__wrapper-form {
@@ -1412,10 +1424,30 @@ body {
   .description__br-mob {
     display: none;
   }
+
+  .features__br-tab {
+    display: block;
+  }
+
+  .features__br-mob {
+    display: none;
+  }
 }
 
 @media (min-width: 1366px) {
+  .description__br {
+    display: block;
+  }
+
   .description__br-tab {
+    display: none;
+  }
+
+  .features__br {
+    display: block;
+  }
+
+  .features__br-tab {
     display: none;
   }
 }
@@ -1461,7 +1493,22 @@ body {
   }
 }
 
-@media screen and (max-width: 1366px) {
+@media (max-width: 1365px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .catalog__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[4];
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+  }
+}
+
+@media screen and (max-width: 1365px) {
   .wrap {
     background-image: url("../img/landscape-1-tablet@1x.jpg");
   }
@@ -1646,6 +1693,10 @@ body {
   }
 
   .catalog__list {
+    min-width: 100%;
+  }
+
+  .catalog__list {
     -ms-flex-pack: distribute;
     justify-content: space-around;
   }
@@ -1801,7 +1852,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1366px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1366px) and (min-resolution: 144dpi), screen and (max-width: 1366px) and (min-resolution: 1.5dppx) {
+@media screen and (max-width: 1365px) and (-webkit-min-device-pixel-ratio: 1.5), screen and (max-width: 1365px) and (-o-min-device-pixel-ratio: 3/2), screen and (max-width: 1365px) and (min-resolution: 144dpi), screen and (max-width: 1365px) and (min-resolution: 1.5dppx) {
   .wrap {
     background-image: url("../img/landscape-1-tablet@2x.jpg");
   }
@@ -1812,25 +1863,6 @@ body {
 
   .booking {
     background-image: url("../img/landscape-3-tablet@2x.jpg");
-  }
-}
-
-@media (max-width: 1365px) {
-  .container {
-    max-width: 768px;
-  }
-
-  .description__br {
-    display: none;
-  }
-
-  .catalog__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (1fr)[4];
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
   }
 }
 
@@ -1853,12 +1885,6 @@ body {
   .list-features__item {
     max-width: 300px;
     margin-right: 0;
-  }
-}
-
-@media screen and (max-width: 1365px) {
-  .catalog__list {
-    min-width: 100%;
   }
 }
 
@@ -1953,42 +1979,6 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
-  .features {
-    padding-right: 15px;
-  }
-
-  .features__heading {
-    padding-left: 233px;
-    text-align: left;
-  }
-
-  .features__list {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-
-  .list-features__item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-  }
-
-  .catalog__wrapper-heading {
-    padding-left: 183px;
-  }
-
-  .catalog h2 {
-    margin: 0;
-  }
-
-  .catalog__list {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start;
-  }
-}
-
 @media (max-width: 767px) {
   .container {
     max-width: 320px;
@@ -2004,6 +1994,10 @@ body {
     -ms-grid-rows: (1fr)[8];
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 30px;
+  }
+
+  .booking__br {
+    display: block;
   }
 }
 
@@ -2263,9 +2257,18 @@ body {
   }
 
   .features {
+    padding-right: 15px;
+  }
+
+  .features {
     padding-top: 58px;
     padding-bottom: 36px;
     padding-left: 15px;
+  }
+
+  .features__heading {
+    padding-left: 233px;
+    text-align: left;
   }
 
   .features__heading {
@@ -2288,6 +2291,12 @@ body {
   }
 
   .features__list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .features__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -2298,6 +2307,11 @@ body {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+  }
+
+  .list-features__item {
+    margin-right: 30px;
+    margin-bottom: 30px;
   }
 
   .list-features__item {
@@ -2330,14 +2344,28 @@ body {
   }
 
   .catalog__wrapper-heading {
+    padding-left: 183px;
+  }
+
+  .catalog__wrapper-heading {
     padding-left: 0;
     padding-bottom: 28px;
+  }
+
+  .catalog h2 {
+    margin: 0;
   }
 
   .catalog h2 {
     margin: 0 auto;
     font-size: 24px;
     line-height: 36px;
+  }
+
+  .catalog__list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
   }
 
   .catalog__list {
