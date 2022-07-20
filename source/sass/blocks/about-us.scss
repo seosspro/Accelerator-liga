@@ -112,3 +112,9 @@
     line-height: 140%;
   }
 }
+
+.about-us__br{
+  @media(min-width:768px){
+    display: none;
+  }
+}
