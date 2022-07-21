@@ -44,6 +44,10 @@ const js = () => {
     .pipe(gulp.dest("build/js"));
 };
 
+const jsBuild = () => {
+  return gulp.src(["source/js/main.js"]).pipe(gulp.dest("build/js"));
+};
+
 const svgo = () => {
   return gulp
     .src("source/img/**/*.{svg}")
@@ -132,7 +136,7 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, svgo, copy, css, sprite, js);
+const build = gulp.series(clean, svgo, copy, css, sprite, js, jsBuild);
 
 const start = gulp.series(build, syncServer);
 

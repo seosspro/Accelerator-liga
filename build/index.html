@@ -10,10 +10,15 @@
   <meta name="description"
     content="Путешествия на край Земли. Узнать о ближайших круизах в Антарктику. Экскурсионные туры. Забронировать круиз.">
   <link href="css/style.min.css" rel="stylesheet">
+  <link rel="preload" href="fonts/montserrat-bold.woff">
+  <link rel="preload" href="fonts/montserrat-bold.woff2">
+  <link rel="preload" href="fonts/montserrat-medium.woff2">
+  <link rel="preload" href="fonts/montserrat-medium.woff">
+  <link rel="preload" href="fonts/montserrat-regular.woff">
+  <link rel="preload" href="fonts/montserrat-regular.woff2">
+  <link rel="preload" href="fonts/montserrat-semibold.woff">
+  <link rel="preload" href="fonts/montserrat-semibold.woff2">
 
-  <script>
-    document.createElement("picture");
-  </script>
 </head>
 
 <body>
@@ -29,7 +34,8 @@
           </picture>
         </a>
         <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+              меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
               <li class="site-list__item site-list__item--advantage">
@@ -51,9 +57,9 @@
 
       <div class="about-us">
         <div class="about-us__wrapper">
-          <h1><span>Круизы</span> <span>в Антарктику</span></h1>
+          <h1>Круизы в Антарктику</h1>
           <p>
-            <span>Волшебный мир</span> <span>айсбергови пингвинов</span>
+            Волшебный мир айсбергов и пингвинов
           </p>
         </div>
       </div>
@@ -66,32 +72,36 @@
         <div class="description__wrapper">
           <div class="description__wrapper-text">
             <h2>Путешествие на край Земли</h2>
-            <p>Это волшебное путешествие <br class="description__br-mob"> поможет <br class="description__br-tab"> вам
-              познакомиться <br class="description__br description__br-mob"> поближе <br class="description__br-tab">
-              судивительным миром <br class="description__br-mob"> Антарктики. <br class="description__br-tab"> Наш
-              круизный <br class="description__br description__br-mob"> лайнер отвезет вас <br
-                class="description__br-tab"> на край <br class="description__br-mob"> Земли,
-              где вы сможете <br class="description__br-tab"> увидеть: <br class="description__br description__br-mob">
-              ледяные айсберги, <br class="description__br-tab"> несколько <br class="description__br-mob"> видов
-              пингвинов, китов, <br class="description__br description__br-tab"> морских <br
-                class="description__br-mob"> котикови многое другое.</p>
+            <p>Это волшебное путешествие поможет вам
+              познакомиться поближе
+              судивительным миром Антарктики. Наш
+              круизный лайнер отвезет вас на край Земли,
+              где вы сможете увидеть:
+              ледяные айсберги, несколько видов
+              пингвинов, китов, морских котикови многое другое.</p>
           </div>
           <div class="description__wrapper-img">
             <picture>
+              <!-- 1x: 290px; 2x: 580px -->
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/penguins-mobile@1x.webp 1x, img/penguins-mobile@2x.webp 2x">
 
-              <source type="image/webp" media="(max-width: 1365px)"
+              <!-- 1x: 324px; 2x: 648px -->
+              <source type="image/webp" media="(max-width: 1023px)"
                 srcset="img/penguins-tablet@1x.webp 1x, img/penguins-tablet@2x.webp 2x">
 
+              <!-- 1x: 560px; 2x: 1120px -->
               <source type="image/webp" srcset="img/penguins-desktop@1x.webp 1x, img/penguins-desktop@2x.webp 2x">
 
+              <!-- 1x: 290px; 2x: 580px -->
               <source media="(max-width: 767px)" srcset="img/penguins-mobile@1x.jpg 1x, img/penguins-mobile@2x.jpg 2x">
 
-              <source media="(max-width: 1365px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
+              <!-- 1x: 324px; 2x: 648px -->
+              <source media="(max-width: 1023px)" srcset="img/penguins-tablet@1x.jpg 1x, img/penguins-tablet@2x.jpg 2x">
 
+              <!-- 1x: 560px; 2x: 1120px -->
               <img src="img/penguins-desktop@1x.jpg" srcset="img/penguins-desktop@2x.jpg 2x" width="560" height="301"
-                alt="Няшные пингвины в Антарктике">
+                alt="пингвины в Антарктике">
             </picture>
           </div>
         </div>
@@ -111,18 +121,23 @@
                   <picture>
                     <source media="(max-width:767px)" srcset="./img/ship.svg">
                     <source media="(max-width:1365px)" srcset="./img/ship.svg">
-                    <img src="./img/ship-desk.svg" srcset="./img/ship-desk.svg" alt="logo">
+                    <svg width="21" height="26" viewBox="0 0 21 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M3.42649 13.3219L10.2795 8.0728C10.4348 7.96762 10.6331 7.96762 10.7884 8.0728L17.6753 13.3219V7.05914C17.713 6.20035 17.0911 5.47162 16.2864 5.43143C16.2744 5.43081 16.2625 5.43039 16.2505 5.43011H4.85138C4.04591 5.44917 3.4074 6.16134 3.42525 7.0209C3.42551 7.03365 3.4259 7.0464 3.42649 7.05914V13.3219Z"
+                        fill="#011C40" />
+                      <path d="M12.2472 0H8.85464V4.34413H12.2472V0Z" fill="#011C40" />
+                      <path
+                        d="M18.8966 24.5081L21 17.0869L18.0485 14.8786L17.8449 14.7701L10.8901 9.59332V24.8701H10.5169L9.87229 24.8339V9.59332L0 17.0869L2.17127 24.4719L3.42525 25.9922C3.42525 25.9922 4.48187 25.9922 5.56747 25.9922C5.56747 25.9922 9.52521 25.9975 10.517 25.9922C11.5265 26.0097 13.3195 25.9922 13.3195 25.9922H17.7432L18.8966 24.5081Z"
+                        fill="#011C40" />
+                    </svg>
+
                   </picture>
                 </div>
                 <h3>Небольшой круизный лайнер</h3>
                 <p>
-                  Круизный лайнер, <br class="features__br-tab"> рассчитанный <br class="features__br-mob"> всего <br
-                    class="features__br features__br-tab"> лишь на
-                  300 гостей, <br class="features__br-tab features__br-mob"> поможет избежать <br
-                    class="features__br features__br-tab">
-                  шума <br class="features__br-mob"> и очередей <br class="features__br-tab"> и даст возможность <br
-                    class="features__br features__br-mob"> насладиться
-                  видами <br class="features__br-tab"> и природой. <br class="features__br-mob">
+                  Круизный лайнер, рассчитанный всего лишь на 300 гостей, поможет избежать шума и
+                  очередей и даст
+                  возможность насладиться видами и природой.
                 </p>
               </li>
               <li class="list-features__item list-features__item--ticks">
@@ -130,17 +145,18 @@
                   <picture>
                     <source media="(max-width:767px)" srcset="./img/checked.svg">
                     <source media="(max-width:1365px)" srcset="./img/checked.svg">
-                    <img src="./img/checked-desk.svg" srcset="./img/checked-desk.svg" alt="logo">
+                    <svg width="33" height="19" viewBox="0 0 33 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M24.9701 2.0041L22.9608 0L13.9583 8.98658L15.9675 10.9907L24.9701 2.0041ZM30.9978 0L15.9604 14.9918L10.0392 9.08572L8.02991 11.0898L15.9604 19L33 2.0041L30.9978 0ZM0 11.0898L7.93051 19L9.93976 16.9959L2.00925 9.08572L0 11.0898Z"
+                        fill="#011C40" />
+                    </svg>
                   </picture>
                 </div>
                 <h3>Система все включено</h3>
                 <p>
-                  Все наши круизы <br class="features__br-tab"> работают <br class="features__br features__br-mob"> по
-                  системе <br class="features__br-tab"> “Все Включено”. <br
-                    class="features__br features__br-tab features__br-mob"> Великолепные
-                  блюда <br class="features__br-tab features__br-mob"> и
-                  безлимитный <br class="features__br"> бар <br class="features__br-tab"> доступны <br
-                    class="features__br-mob"> для вас <br class="features__br-tab"> 24 часа.
+                  Все наши круизы работают по системе “Все Включено”. Великолепные блюда и безлимитный
+                  бар доступны для
+                  вас 24 часа.
                 </p>
               </li>
               <li class="list-features__item list-features__item--boat">
@@ -148,18 +164,22 @@
                   <picture>
                     <source media="(max-width:767px)" srcset="./img/yacht.svg">
                     <source media="(max-width:1365px)" srcset="./img/yacht.svg">
-                    <img src="./img/yacht-desk.svg" srcset="./img/yacht-desk.svg" alt="logo">
+                    <svg width="38" height="13" viewBox="0 0 38 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path
+                        d="M35.7879 10.4485L1.42308 6.99263C1.15901 6.96606 0.981029 7.22155 1.11781 7.42503C3.31425 10.6949 8.51389 13 14.5667 13H35.0671C35.2065 13 35.3287 12.9192 35.3699 12.8005L36.0551 10.8125C36.1134 10.6435 35.9849 10.4683 35.7879 10.4485Z"
+                        fill="#011C40" />
+                      <path
+                        d="M37.9001 4.78198C37.7994 4.64181 37.6353 4.54855 37.4511 4.52649L27.951 3.39598C27.6084 3.35584 27.286 3.57231 27.2392 3.88152C27.1924 4.19072 27.4368 4.47562 27.7832 4.51682L28.8586 4.6446C29.0157 4.66328 29.1335 4.7831 29.1335 4.92439V5.79829C29.1335 5.96614 28.9701 6.09729 28.7832 6.07921L26.2499 5.83671C26.0891 5.822 25.9669 5.70045 25.9669 5.55631V3.08227C25.9669 3.0263 25.9852 2.97205 26.0201 2.92568L27.1271 1.44365C27.2538 1.27407 27.2684 1.05701 27.1658 0.875578C27.0625 0.693552 26.858 0.574852 26.63 0.565247L13.33 2.65797e-05C13.1165 -0.00169564 12.9094 0.0803087 12.7847 0.236302C12.7847 0.236302 10.2539 3.41069 9.69909 4.10932C9.63259 4.19298 9.52111 4.23762 9.40711 4.22629L0.700479 3.39433C0.520646 3.37737 0.343263 3.42884 0.209669 3.53562C0.0766682 3.64306 0 3.79567 0 3.95617C0 4.50052 0.0791917 5.03408 0.228669 5.55188C0.261622 5.66607 0.373099 5.74914 0.50417 5.76272L36.2857 9.36103C36.437 9.37627 36.5789 9.29321 36.6239 9.16318L37.9723 5.25281C38.0267 5.09403 38.0001 4.92161 37.9001 4.78198ZM18.2768 1.65111L17.7828 4.73846C17.7588 4.88822 17.6099 4.99507 17.4408 4.97983C16.2052 4.86848 11.5628 4.4327 11.5628 4.4327C11.3221 4.40951 11.198 4.16363 11.3386 3.9873L13.5141 1.26904C13.5768 1.19101 13.6794 1.14636 13.7871 1.15093L17.9785 1.32899C18.1647 1.33687 18.3034 1.48604 18.2768 1.65111ZM25.1428 2.06318L24.7533 2.58323C24.7185 2.6296 24.7001 2.68438 24.7001 2.74035V5.37495C24.7001 5.5428 24.5367 5.67396 24.3498 5.65587L19.3237 5.17544C19.1457 5.15848 19.0184 5.01262 19.0437 4.85438L19.556 1.65343C19.5788 1.50929 19.7213 1.40417 19.8848 1.41092L24.8945 1.62402C25.1403 1.63415 25.2796 1.88003 25.1428 2.06318ZM32.9334 6.16174C32.9334 6.32959 32.77 6.46074 32.5832 6.44266C32.5832 6.44266 31.2684 6.31038 30.6794 6.24825C30.5198 6.23189 30.4001 6.11087 30.4001 5.96786V5.15053C30.4001 4.97983 30.5686 4.84755 30.7586 4.87014L32.6586 5.09622C32.8156 5.11543 32.9334 5.23525 32.9334 5.37661V6.16174ZM36.4314 5.87797L36.1964 6.55851C36.1521 6.68742 36.0108 6.77048 35.8601 6.75637L34.4826 6.62469C34.3224 6.60945 34.2001 6.4879 34.2001 6.34377V5.60328C34.2001 5.43258 34.3686 5.3003 34.5586 5.32289L36.1704 5.51452C36.3642 5.5377 36.489 5.71072 36.4314 5.87797Z"
+                        fill="#011C40" />
+                    </svg>
+
                   </picture>
                 </div>
                 <h3>Экскурсионные туры на Zodiac</h3>
                 <p>
-                  Экскурсионные туры <br class="features__br-tab"> к берегам <br class="features__br features__br-mob">
-                  Антарктиды <br class="features__br-tab"> совершаются <br class="features__br features__br-mob"> на <br
-                    class="features__br-tab">
-                  оборудованных <br class="features__br-tab"> лодках <br class="features__br-mob"> типа <br
-                    class="features__br features__br-mob"> Zodiac <br class="features__br-tab">
-                  в сопровождении <br class="features__br features__br-tab"> опытных <br class="features__br-tab">
-                  экскурсоводов.
+                  Экскурсионные туры к берегам Антарктиды совершаются на оборудованных лодках типа
+                  Zodiac в
+                  сопровождении опытных экскурсоводов.
                 </p>
               </li>
 
@@ -185,21 +205,27 @@
                   <div class="card__img">
                     <picture>
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/cruise-1-mobile@1x.webp 1x, img/cruise-1-mobile@2x.webp 2x">
 
-                      <source type="image/webp" media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source type="image/webp" media="(max-width: 1023px)"
                         srcset="img/cruise-1-tablet@1x.webp 1x, img/cruise-1-tablet@2x.webp 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <source type="image/webp"
                         srcset="img/cruise-1-desktop@1x.webp 1x, img/cruise-1-desktop@2x.webp 2x">
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source media="(max-width: 767px)"
                         srcset="img/cruise-1-mobile@1x.jpg 1x, img/cruise-1-mobile@2x.jpg 2x">
 
-                      <source media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source media="(max-width: 1023px)"
                         srcset="img/cruise-1-tablet@1x.jpg 1x, img/cruise-1-tablet@2x.jpg 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <img src="img/cruise-1-desktop@1x.jpg" srcset="img/cruise-1-desktop@2x.jpg 2x" width="260"
                         height="386" alt="Круиз Астория">
                     </picture>
@@ -253,21 +279,27 @@
                   <div class="card__img">
                     <picture>
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/cruise-2-mobile@1x.webp 1x, img/cruise-2-mobile@2x.webp 2x">
 
-                      <source type="image/webp" media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source type="image/webp" media="(max-width: 1023px)"
                         srcset="img/cruise-2-tablet@1x.webp 1x, img/cruise-2-tablet@2x.webp 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <source type="image/webp"
                         srcset="img/cruise-2-desktop@1x.webp 1x, img/cruise-2-desktop@2x.webp 2x">
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source media="(max-width: 767px)"
                         srcset="img/cruise-2-mobile@1x.jpg 1x, img/cruise-2-mobile@2x.jpg 2x">
 
-                      <source media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source media="(max-width: 1023px)"
                         srcset="img/cruise-2-tablet@1x.jpg 1x, img/cruise-2-tablet@2x.jpg 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <img src="img/cruise-2-desktop@1x.jpg" srcset="img/cruise-2-desktop@2x.jpg 2x" width="260"
                         height="386" alt="Круиз Элайн">
                     </picture>
@@ -321,21 +353,27 @@
                   <div class="card__img">
                     <picture>
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/cruise-3-mobile@1x.webp 1x, img/cruise-3-mobile@2x.webp 2x">
 
-                      <source type="image/webp" media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source type="image/webp" media="(max-width: 1023px)"
                         srcset="img/cruise-3-tablet@1x.webp 1x, img/cruise-3-tablet@2x.webp 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <source type="image/webp"
                         srcset="img/cruise-3-desktop@1x.webp 1x, img/cruise-3-desktop@2x.webp 2x">
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source media="(max-width: 767px)"
                         srcset="img/cruise-3-mobile@1x.jpg 1x, img/cruise-3-mobile@2x.jpg 2x">
 
-                      <source media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source media="(max-width: 1023px)"
                         srcset="img/cruise-3-tablet@1x.jpg 1x, img/cruise-3-tablet@2x.jpg 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <img src="img/cruise-3-desktop@1x.jpg" srcset="img/cruise-3-desktop@2x.jpg 2x" width="260"
                         height="386" alt="Круиз Атлантис">
                     </picture>
@@ -389,21 +427,27 @@
                   <div class="card__img">
                     <picture>
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/cruise-4-mobile@1x.webp 1x, img/cruise-4-mobile@2x.webp 2x">
 
-                      <source type="image/webp" media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source type="image/webp" media="(max-width: 1023px)"
                         srcset="img/cruise-4-tablet@1x.webp 1x, img/cruise-4-tablet@2x.webp 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <source type="image/webp"
                         srcset="img/cruise-4-desktop@1x.webp 1x, img/cruise-4-desktop@2x.webp 2x">
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source media="(max-width: 767px)"
                         srcset="img/cruise-4-mobile@1x.jpg 1x, img/cruise-4-mobile@2x.jpg 2x">
 
-                      <source media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source media="(max-width: 1023px)"
                         srcset="img/cruise-4-tablet@1x.jpg 1x, img/cruise-4-tablet@2x.jpg 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <img src="img/cruise-4-desktop@1x.jpg" srcset="img/cruise-4-desktop@2x.jpg 2x" width="260"
                         height="386" alt="Круиз Одиссей">
                     </picture>
@@ -457,21 +501,27 @@
                   <div class="card__img">
                     <picture>
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/cruise-5-mobile@1x.webp 1x, img/cruise-5-mobile@2x.webp 2x">
 
-                      <source type="image/webp" media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source type="image/webp" media="(max-width: 1023px)"
                         srcset="img/cruise-5-tablet@1x.webp 1x, img/cruise-5-tablet@2x.webp 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <source type="image/webp"
                         srcset="img/cruise-5-desktop@1x.webp 1x, img/cruise-5-desktop@2x.webp 2x">
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source media="(max-width: 767px)"
                         srcset="img/cruise-5-mobile@1x.jpg 1x, img/cruise-5-mobile@2x.jpg 2x">
 
-                      <source media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source media="(max-width: 1023px)"
                         srcset="img/cruise-5-tablet@1x.jpg 1x, img/cruise-5-tablet@2x.jpg 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <img src="img/cruise-5-desktop@1x.jpg" srcset="img/cruise-5-desktop@2x.jpg 2x" width="260"
                         height="386" alt="Круиз Олимпия">
                     </picture>
@@ -525,21 +575,27 @@
                   <div class="card__img">
                     <picture>
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/cruise-6-mobile@1x.webp 1x, img/cruise-6-mobile@2x.webp 2x">
 
-                      <source type="image/webp" media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source type="image/webp" media="(max-width: 1023px)"
                         srcset="img/cruise-6-tablet@1x.webp 1x, img/cruise-6-tablet@2x.webp 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <source type="image/webp"
                         srcset="img/cruise-6-desktop@1x.webp 1x, img/cruise-6-desktop@2x.webp 2x">
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source media="(max-width: 767px)"
                         srcset="img/cruise-6-mobile@1x.jpg 1x, img/cruise-6-mobile@2x.jpg 2x">
 
-                      <source media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source media="(max-width: 1023px)"
                         srcset="img/cruise-6-tablet@1x.jpg 1x, img/cruise-6-tablet@2x.jpg 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <img src="img/cruise-6-desktop@1x.jpg" srcset="img/cruise-6-desktop@2x.jpg 2x" width="260"
                         height="386" alt="Круиз Аврора">
                     </picture>
@@ -593,21 +649,27 @@
                   <div class="card__img">
                     <picture>
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source type="image/webp" media="(max-width: 767px)"
                         srcset="img/cruise-7-mobile@1x.webp 1x, img/cruise-7-mobile@2x.webp 2x">
 
-                      <source type="image/webp" media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source type="image/webp" media="(max-width: 1023px)"
                         srcset="img/cruise-7-tablet@1x.webp 1x, img/cruise-7-tablet@2x.webp 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <source type="image/webp"
                         srcset="img/cruise-7-desktop@1x.webp 1x, img/cruise-7-desktop@2x.webp 2x">
 
+                      <!-- 1x: 270px; 2x: 540px -->
                       <source media="(max-width: 767px)"
                         srcset="img/cruise-7-mobile@1x.jpg 1x, img/cruise-7-mobile@2x.jpg 2x">
 
-                      <source media="(max-width: 1365px)"
+                      <!-- 1x: 309px; 2x: 618px -->
+                      <source media="(max-width: 1023px)"
                         srcset="img/cruise-7-tablet@1x.jpg 1x, img/cruise-7-tablet@2x.jpg 2x">
 
+                      <!-- 1x: 260px; 2x: 520px -->
                       <img src="img/cruise-7-desktop@1x.jpg" srcset="img/cruise-7-desktop@2x.jpg 2x" width="260"
                         height="386" alt="Круиз Леонор">
                     </picture>
@@ -738,9 +800,7 @@
               <h2>Раннее бронирование</h2>
             </div>
             <div class="booking__description">
-              <p>
-                Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%
-              </p>
+              <p>Забронируйте тур за 3-6 месяцев до даты выезда и сэкономьте до 50%</p>
             </div>
           </div>
           <div class="booking__wrapper-form">
@@ -764,7 +824,8 @@
 
               <div class="form__field form__field-check">
                 <input class="visually-hidden form__checkbox" id="check" type="checkbox" name="check" required>
-                <label for="check">Я согласен на обработку <br class="booking__br"> моих персональных данных</label>
+                <label for="check">Я согласен на обработку <br class="booking__br"> моих персональных
+                  данных</label>
               </div>
               <button class="form__button" id="btn" type="submit" aria-label="Оставить заявку"><span>Оставить
                   заявку</span></button>
@@ -804,13 +865,12 @@
 
           <div class="contacts__wrapper-text">
             <div class="contacts__slogan">
-              <span>У вас ещё остались вопросы или сомнения?</span>
-              <span>Приезжайте к нам вофис и мы вам все расскажем.</span>
+              <span>У вас ещё остались вопросы или сомнения? Приезжайте к нам в офис и мы вам все расскажем.</span>
             </div>
 
             <div class="contacts__address">
               <h3 class="visually-hidden">Адрес</h3>
-              <span>г. Санкт Петербург, ул.Большая Конюшенная, 20/1</span>
+              <span>г. Санкт Петербург, <br class="contacts__br"> ул.Большая Конюшенная, 20/1</span>
             </div>
 
             <div class="contacts__phone">
@@ -842,7 +902,8 @@
                   <a class="navigation-list__link navigation-list__link--booking" href="#">Направления</a>
                 </li>
                 <li class="navigation-list__item">
-                  <a class="navigation-list__link navigation-list__link--catalog" href="#">Ближайшие круизы</a>
+                  <a class="navigation-list__link navigation-list__link--catalog" href="#">Ближайшие
+                    круизы</a>
                 </li>
                 <li class="navigation-list__item">
                   <a class="navigation-list__link navigation-list__link--contacts" href="#">Контакты</a>
