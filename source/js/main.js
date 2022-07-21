@@ -1,6 +1,8 @@
 "use strict";
 
 (function () {
+  let element = document.getElementById(".main-nav__toggle");
+
   let navMain = document.querySelector(".main-nav");
   let navToggle = document.querySelector(".main-nav__toggle");
 
