@@ -1,11 +1,5 @@
 .contacts {
   background-color: #f9fbfd;
-
-  &__br {
-    @media (min-width:1366px){
-      display: none;
-    }
-  }
 }
 
 .contacts__wrapper {
@@ -142,10 +136,6 @@
   .contacts__map {
     order: 1;
   }
-}
-
-.contacts__map img {
-  line-height: 0;
 }
 
 .contacts__slogan {

@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
 
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   cursor: pointer;
 }
 
@@ -18,7 +18,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  color: #011C40;
+  color: #011c40;
 
   text-decoration: none;
 }
@@ -31,8 +31,7 @@
   opacity: 0.5;
 }
 
-
-@media  screen and (max-width: 1365px) {
+@media screen and (max-width: 1365px) {
   .button__link {
     min-width: 239px;
     padding-top: 11px;
@@ -42,7 +41,7 @@
   }
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .button__link {
     min-width: 220px;
     padding-top: 11px;

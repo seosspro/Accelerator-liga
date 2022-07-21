@@ -8,14 +8,6 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/landscape-3-desktop@2x.jpg");
   }
-
-  &__br {
-    display: none;
-
-    @media (max-width: 767px) {
-      display: block;
-    }
-  }
 }
 
 @media screen and (max-width: 1365px) {
@@ -55,7 +47,6 @@
 @media screen and (max-width: 767px) {
   .booking {
     padding-top: 60px;
-    padding-bottom: 36px;
     padding-left: 14px;
     padding-right: 14px;
     padding-bottom: 17px;
@@ -210,4 +201,3 @@
     padding-right: 0;
   }
 }
-

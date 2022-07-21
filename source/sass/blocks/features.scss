@@ -14,32 +14,6 @@
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/landscape-2-desktop@2x.jpg");
   }
-
-  &__br {
-    display: none;
-
-    @media (min-width: 1366px) {
-      display: block;
-    }
-
-    &-tab {
-      display: none;
-
-      @media (min-width: 768px) {
-        display: block;
-      }
-
-      @media (min-width: 1366px) {
-        display: none;
-      }
-    }
-
-    &-mob {
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
-  }
 }
 
 @media screen and (max-width: 1365px) {
@@ -264,5 +238,3 @@
     align-items: flex-start;
   }
 }
-
-

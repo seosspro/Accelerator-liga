@@ -1,6 +1,6 @@
 .description {
   background-color: #f9fbfd;
-  
+
   &__br {
     display: none;
 
@@ -10,6 +10,7 @@
 
     &-tab {
       display: block;
+
       @media (max-width: 767px) {
         display: none;
       }

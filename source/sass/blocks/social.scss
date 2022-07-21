@@ -18,13 +18,8 @@
   }
 }
 
-
 .social__item {
   line-height: 0;
-}
-
-.social__link {
-  margin-left: 33px;
 }
 
 .social__link:hover {
@@ -62,8 +57,9 @@
 
 .social__link {
   line-height: 0;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-decoration: none;
+  margin-left: 33px;
 }
 
 @media screen and (max-width: 767px) {
@@ -71,4 +67,3 @@
     margin-left: 0;
   }
 }
-
