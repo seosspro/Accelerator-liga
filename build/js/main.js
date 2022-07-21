@@ -6,7 +6,7 @@
   if (!navToggle) {
     alert("Кнопки нет на странице");
   } else {
-    alert("Кнопка на месте");
+    console.log("Кнопка на месте");
   }
 
   navMain.classList.remove("main-nav--nojs");
