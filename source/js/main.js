@@ -1,10 +1,13 @@
 "use strict";
 
 (function () {
-  let element = document.getElementById(".main-nav__toggle");
-
   let navMain = document.querySelector(".main-nav");
   let navToggle = document.querySelector(".main-nav__toggle");
+  if (!navToggle) {
+    alert("Кнопки нет на странице");
+  } else {
+    alert("Кнопка на месте");
+  }
 
   navMain.classList.remove("main-nav--nojs");
 
