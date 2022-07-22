@@ -16,7 +16,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: $mobile-width) {
   .description__wrapper {
     flex-direction: column;
     padding-left: 15px;
@@ -89,7 +89,7 @@
   padding-bottom: 120px;
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1365px) {
   .description__wrapper-text {
     padding-top: 120px;
   }
