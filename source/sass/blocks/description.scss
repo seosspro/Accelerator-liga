@@ -1,33 +1,5 @@
 .description {
   background-color: #f9fbfd;
-
-  &__br {
-    display: none;
-
-    @media (min-width: 1366px) {
-      display: block;
-    }
-
-    &-tab {
-      display: block;
-
-      @media (max-width: 767px) {
-        display: none;
-      }
-
-      @media (min-width: 1366px) {
-        display: none;
-      }
-    }
-
-    &-mob {
-      display: block;
-
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
-  }
 }
 
 .description__wrapper {

@@ -3,23 +3,20 @@
 (function () {
   let navMain = document.querySelector(".main-nav");
   let navToggle = document.querySelector(".main-nav__toggle");
-  if (!navToggle) {
-    alert("Кнопки нет на странице");
-  } else {
-    console.log("Кнопка на месте");
-  }
 
   navMain.classList.remove("main-nav--nojs");
 
-  navToggle.addEventListener("click", function () {
-    if (navMain.classList.contains("main-nav--closed")) {
-      navMain.classList.remove("main-nav--closed");
-      navMain.classList.add("main-nav--opened");
-    } else {
-      navMain.classList.add("main-nav--closed");
-      navMain.classList.remove("main-nav--opened");
-    }
-  });
+  if (navToggle) {
+    navToggle.addEventListener("click", function () {
+      if (navMain.classList.contains("main-nav--closed")) {
+        navMain.classList.remove("main-nav--closed");
+        navMain.classList.add("main-nav--opened");
+      } else {
+        navMain.classList.add("main-nav--closed");
+        navMain.classList.remove("main-nav--opened");
+      }
+    });
+  }
 
   window.addEventListener("DOMContentLoaded", function () {
     var inputs = document.querySelectorAll('input[type="tel"]');
