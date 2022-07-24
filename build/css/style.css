@@ -688,10 +688,6 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-top: 15px;
-  margin-bottom: 15px;
 }
 
 .card__img {
@@ -1585,6 +1581,7 @@ body {
   .catalog__list {
     -ms-flex-pack: distribute;
     justify-content: space-around;
+    padding: 0;
   }
 
   .cards__item {
@@ -1886,8 +1883,14 @@ body {
   }
 
   .catalog__list {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-grid-columns: 0.5fr;
+    grid-template-columns: 0.5fr;
     -ms-grid-rows: (1fr)[8];
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 30px;
@@ -2324,6 +2327,7 @@ body {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
+    padding: 0;
   }
 
   .cards__item {
@@ -2494,6 +2498,13 @@ body {
     padding-left: 40px;
   }
 
+  .page-footer__wrap {
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    padding-left: 15px;
+  }
+
   .page-footer__wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2585,15 +2596,6 @@ body {
 
   .booking {
     background-image: url("../img/landscape-3-mobile@2x.jpg");
-  }
-}
-
-@media screen and (max-width: 320px) {
-  .page-footer__wrap {
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
-    padding-left: 15px;
   }
 }
 
