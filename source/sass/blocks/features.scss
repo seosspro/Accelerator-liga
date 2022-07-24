@@ -3,7 +3,6 @@
   padding-top: 112px;
   padding-bottom: 79px;
   padding-right: 0;
-  padding-left: 103px;
 
   background-color: #e3ecf6;
   background-image: url("../img/landscape-2-desktop@1x.jpg");
@@ -38,34 +37,14 @@
 
 @media screen and (min-width: 1366px) {
   .features {
-    padding-right: 103px;
+    padding-right: 0;
+    align-items: center;
   }
 }
 
 @media screen and (max-width: 1365px) {
   .features {
     padding-right: 0;
-  }
-}
-
-@media screen and (max-width: 1365px) {
-  .features {
-    padding-right: 103px;
-  }
-}
-
-@media screen and (max-width: 1365px) {
-  .features {
-    padding-top: 91px;
-    padding-bottom: 70px;
-    padding-right: 15px;
-    padding-left: 45px;
-  }
-}
-
-@media screen and (max-width: 1365px) {
-  .features {
-    padding-right: 45px;
   }
 }
 
@@ -150,8 +129,7 @@
 @media screen and (max-width: 767px) {
   .features__heading {
     align-items: flex-start;
-    padding-left: 32px;
-    text-align: left;
+    text-align: center;
   }
 }
 
@@ -182,11 +160,25 @@
 }
 
 .features__list {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  @media (max-width: 1365px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+  }
+
+  @media (max-width: 767px) {
+    display: flex;
+    padding: 0;
+  }
+
+  @media (min-width: 1366px) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 40px;
+  }
   margin: 0;
-  padding: 0;
 
   list-style: none;
 }

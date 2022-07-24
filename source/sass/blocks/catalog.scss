@@ -15,15 +15,6 @@
   }
 }
 
-@media screen and (max-width: 1365px) {
-  .catalog {
-    padding-top: 91px;
-    padding-bottom: 70px;
-    padding-left: 60px;
-    padding-right: 60px;
-  }
-}
-
 @media screen and (max-width: 767px) {
   .catalog {
     padding-top: 59px;
@@ -130,7 +121,6 @@
 @media screen and (max-width: 1365px) {
   .catalog__list {
     justify-content: space-around;
-    padding: 0;
   }
 }
 
@@ -170,7 +160,6 @@
   .cards__item {
     margin: 0;
     margin-right: 0;
-    margin-bottom: 30px;
   }
 }
 
