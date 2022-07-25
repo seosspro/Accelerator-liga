@@ -813,20 +813,23 @@ body {
   color: #f9fbfd;
 }
 
-.card__heading h4 {
+.card__description p {
   margin: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
-}
-
-.card__description p {
-  margin: 0;
   padding-bottom: 12px;
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
   color: #d8d8d9;
+}
+
+.card__description h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .card__side {
