@@ -4,10 +4,10 @@
 }
 
 .page-header__logo-image {
-  fill: #f9fbfd;
+  fill: #F9FBFD;
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1023px) {
   .logo {
     margin-right: 25px;
   }
@@ -30,11 +30,12 @@
     height: 22px;
   }
 
+
   .logo-menu--closed {
-    fill: #f9fbfd;
+    fill: #F9FBFD;
   }
 
   .logo-menu--opened {
-    fill: #011c40;
+    fill: #011C40;
   }
 }

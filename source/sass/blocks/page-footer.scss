@@ -1,5 +1,5 @@
 .page-footer {
-  background-color: #011c40;
+  background-color: #011C40;
 }
 
 .page-footer__wrap {
@@ -11,10 +11,10 @@
   padding-bottom: 48px;
   padding-left: 103px;
   padding-right: 103px;
-  background-color: #011c40;
+  background-color: #011C40;
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1023px) {
   .page-footer__wrap {
     padding-top: 48px;
     padding-bottom: 50px;
@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media  screen and (max-width: 767px) {
   .page-footer__wrap {
     align-items: start;
     flex-direction: column;
@@ -34,19 +34,20 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media  screen and (max-width: 767px) {
   .page-footer__wrap {
     align-items: center;
     padding-left: 40px;
   }
 }
 
-@media screen and (max-width: 767px) {
+@media  screen and (max-width: 400px) {
   .page-footer__wrap {
     align-items: start;
     padding-left: 15px;
   }
 }
+
 
 .page-footer__wrapper {
   display: flex;
@@ -54,7 +55,7 @@
   align-items: center;
 }
 
-@media screen and (max-width: 767px) {
+@media  screen and (max-width: 767px) {
   .page-footer__wrapper {
     flex-direction: column;
     margin-bottom: 13px;

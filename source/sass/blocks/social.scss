@@ -12,14 +12,19 @@
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 400px) {
   .social__list {
     margin-left: 0;
   }
 }
 
+
 .social__item {
   line-height: 0;
+}
+
+.social__link {
+  margin-left: 33px;
 }
 
 .social__link:hover {
@@ -34,7 +39,7 @@
   margin-left: 0;
 }
 
-@media screen and (max-width: 1365px) {
+@media screen and (max-width: 1023px) {
   .social__link {
     margin-left: 23px;
   }
@@ -57,9 +62,8 @@
 
 .social__link {
   line-height: 0;
-  color: #f9fbfd;
+  color: #F9FBFD;
   text-decoration: none;
-  margin-left: 33px;
 }
 
 @media screen and (max-width: 767px) {
@@ -67,3 +71,4 @@
     margin-left: 0;
   }
 }
+
