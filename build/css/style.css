@@ -485,6 +485,16 @@ body {
   display: none;
 }
 
+.main-nav.main-nav--opened::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 43, 102, 0.5);
+}
+
 .site-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2067,12 +2077,12 @@ body {
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -15px;
     width: 100%;
-    min-height: 299px;
+    min-height: 565px;
     padding-top: 73px;
     padding-left: 15px;
-    background-color: #E5E5E5;
+    background-color: #f9fbfd;
     z-index: 10;
   }
 
