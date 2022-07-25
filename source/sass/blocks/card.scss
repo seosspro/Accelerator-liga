@@ -90,9 +90,6 @@
   font-size: 14px;
   line-height: 20px;
   padding-bottom: 12px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   color: #d8d8d9;
 }
 
@@ -146,10 +143,12 @@
   padding-right: 25px;
 
   visibility: hidden;
+  position: relative;
+  z-index: 50;
 
   color: #f9fbfd;
   background-color: #011c40;
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 }
 
 @media screen and (max-width: 1023px) {
@@ -165,12 +164,6 @@
 
 .card__link {
   align-self: flex-end;
-}
-
-.card__side--back {
-  position: relative;
-  z-index: 50;
-  visibility: hidden;
 }
 
 .card:hover .card__side--back {

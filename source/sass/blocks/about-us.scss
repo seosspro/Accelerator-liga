@@ -9,7 +9,7 @@
   z-index: 9;
 }
 
-@media  screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .about-us__wrapper {
     padding-bottom: 260px;
     padding-top: 169px;
@@ -17,14 +17,14 @@
   }
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .about-us__wrapper {
     padding-top: 120px;
     padding-left: 15px;
   }
 }
 
-@media  screen and (max-width: 452px) {
+@media screen and (max-width: 452px) {
   .about-us__wrapper {
     padding-top: 55px;
     padding-bottom: 163px;
@@ -42,10 +42,10 @@
 
   font-size: 54px;
   line-height: 66px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
-@media  screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .about-us__wrapper h1 {
     padding-left: 5px;
     font-size: 50px;
@@ -53,14 +53,14 @@
   }
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .about-us__wrapper h1 {
     font-size: 30px;
     line-height: 125%;
   }
 }
 
-@media  screen and (max-width: 452px) {
+@media screen and (max-width: 452px) {
   .about-us__wrapper h1 {
     display: flex;
     flex-wrap: wrap;
@@ -72,7 +72,6 @@
   }
 }
 
-
 .about-us__wrapper p {
   margin: 0;
   padding-top: 5px;
@@ -83,10 +82,10 @@
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
-@media  screen and (max-width: 1023px) {
+@media screen and (max-width: 1023px) {
   .about-us__wrapper p {
     padding-left: 5px;
     font-size: 18px;
@@ -94,14 +93,14 @@
   }
 }
 
-@media  screen and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .about-us__wrapper p {
     font-size: 16px;
     line-height: 140%;
   }
 }
 
-@media  screen and (max-width: 452px) {
+@media screen and (max-width: 452px) {
   .about-us__wrapper p {
     display: flex;
     flex-wrap: wrap;

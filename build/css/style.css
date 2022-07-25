@@ -11,8 +11,6 @@
 html {
   line-height: 1.15;
   /* 1 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
 }
 
 /* Sections
@@ -68,7 +66,7 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace;
+  font-family: monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -93,8 +91,6 @@ a {
 abbr[title] {
   border-bottom: none;
   /* 1 */
-  text-decoration: underline;
-  /* 2 */
   -webkit-text-decoration: underline dotted;
   text-decoration: underline dotted;
   /* 2 */
@@ -117,7 +113,7 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace;
+  font-family: monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -212,13 +208,6 @@ select {
  * Correct the inability to style clickable types in iOS and Safari.
  */
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
-
 /**
  * Remove the inner border and padding in Firefox.
  */
@@ -247,7 +236,7 @@ button:-moz-focusring,
  */
 
 fieldset {
-  padding: 0.35em 0.75em 0.625em;
+  padding: 0.35em 0.75em 0.63em;
 }
 
 /**
@@ -317,32 +306,14 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 
-[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  outline-offset: -2px;
-  /* 2 */
-}
-
 /**
  * Remove the inner padding in Chrome and Safari on macOS.
  */
-
-[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.
  * 2. Change font properties to `inherit` in Safari.
  */
-
-::-webkit-file-upload-button {
-  -webkit-appearance: button;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-}
 
 /* Interactive
    ========================================================================== */
@@ -518,7 +489,7 @@ body {
 .site-list__link {
   margin-right: 33px;
   font-weight: 500;
-  color: #F9FBFD;
+  color: #f9fbfd;
   line-height: 20px;
 }
 
@@ -560,7 +531,7 @@ body {
   padding-left: 15px;
   font-size: 54px;
   line-height: 66px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .about-us__wrapper p {
@@ -572,7 +543,7 @@ body {
   font-weight: normal;
   font-size: 20px;
   line-height: 24px;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .description {
@@ -593,7 +564,7 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .description__wrapper-text p {
@@ -602,7 +573,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .description__wrapper-text {
@@ -624,7 +595,7 @@ body {
   padding-bottom: 79px;
   padding-right: 0;
   padding-left: 103px;
-  background-color: #E3ECF6;
+  background-color: #e3ecf6;
   background-image: url("../img/landscape-2-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
@@ -654,7 +625,7 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .features__list {
@@ -678,7 +649,7 @@ body {
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 23px;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
 }
 
 .list-features__item--ship .list-features__icon {
@@ -702,7 +673,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .list-features__item p {
@@ -710,7 +681,7 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 20px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .catalog {
@@ -736,7 +707,7 @@ body {
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .catalog__list {
@@ -819,9 +790,6 @@ body {
   font-size: 14px;
   line-height: 20px;
   padding-bottom: 12px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
   color: #d8d8d9;
 }
 
@@ -860,10 +828,12 @@ body {
   padding-left: 25px;
   padding-right: 25px;
   visibility: hidden;
+  position: relative;
+  z-index: 50;
   color: #f9fbfd;
   background-color: #011c40;
-  -webkit-box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 35px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 35px rgba(1, 28, 64, 0.15);
 }
 
 .card__wrapper-button {
@@ -876,12 +846,6 @@ body {
 .card__link {
   -ms-flex-item-align: end;
   align-self: flex-end;
-}
-
-.card__side--back {
-  position: relative;
-  z-index: 50;
-  visibility: hidden;
 }
 
 .card:hover .card__side--back {
@@ -905,7 +869,7 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-color: #F9FBFD;
+  background-color: #f9fbfd;
   cursor: pointer;
 }
 
@@ -921,7 +885,7 @@ body {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
-  color: #011C40;
+  color: #011c40;
   text-decoration: none;
 }
 
@@ -980,7 +944,7 @@ body {
   font-weight: bold;
   font-size: 40px;
   line-height: 60px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .booking__description p {
@@ -989,7 +953,7 @@ body {
   font-weight: normal;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .booking__wrapper-form {
@@ -1010,8 +974,8 @@ body {
   padding-left: 50px;
   padding-right: 50px;
   background-color: #011c40;
-  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
-  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
 }
 
 .booking__form p {
@@ -1193,6 +1157,7 @@ body {
   top: 0;
   left: 0;
   z-index: 1;
+  line-height: 0;
   margin: 0;
 }
 
@@ -1209,10 +1174,6 @@ body {
   background-size: 18px 22px;
 }
 
-.contacts__map img {
-  line-height: 0;
-}
-
 .contacts__slogan {
   padding-bottom: 32px;
 }
@@ -1222,7 +1183,7 @@ body {
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .contacts__address {
@@ -1235,7 +1196,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #011C40;
+  color: #011c40;
 }
 
 .contacts__address span::before {
@@ -1262,7 +1223,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: #011C40;
+  color: #011c40;
   text-decoration: none;
 }
 
@@ -1296,7 +1257,7 @@ body {
 }
 
 .page-footer {
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .page-footer__wrap {
@@ -1315,7 +1276,7 @@ body {
   padding-bottom: 48px;
   padding-left: 103px;
   padding-right: 103px;
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .page-footer__wrapper {
@@ -1335,7 +1296,7 @@ body {
 }
 
 .page-header__logo-image {
-  fill: #F9FBFD;
+  fill: #f9fbfd;
 }
 
 .nav__list {
@@ -1353,7 +1314,7 @@ body {
   margin-right: 33px;
   font-weight: 500;
   line-height: 20px;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-decoration: none;
 }
 
@@ -1380,10 +1341,6 @@ body {
   line-height: 0;
 }
 
-.social__link {
-  margin-left: 33px;
-}
-
 .social__link:hover {
   opacity: 0.8;
 }
@@ -1398,8 +1355,9 @@ body {
 
 .social__link {
   line-height: 0;
-  color: #F9FBFD;
+  color: #f9fbfd;
   text-decoration: none;
+  margin-left: 33px;
 }
 
 @media screen and (min-width: 1367px) {
@@ -1588,13 +1546,11 @@ body {
 
   .site-list__item {
     padding-top: 3px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     line-height: 0;
   }
 
   .site-list__link {
-    margin-right: 11px;
-    margin-left: 11px;
     margin-right: 12.5px;
     margin-left: 12.5px;
     font-size: 14px;
@@ -1945,7 +1901,7 @@ body {
   }
 
   .catalog {
-    padding-right: 0px;
+    padding-right: 0;
   }
 
   .catalog__wrapper-heading {
@@ -2036,7 +1992,7 @@ body {
     right: 6px;
     width: 20px;
     height: 2px;
-    background-color: black;
+    background-color: #060606;
   }
 
   .main-nav--opened .main-nav__toggle::before {
@@ -2117,7 +2073,7 @@ body {
     margin-bottom: 22px;
     font-size: 18px;
     line-height: 22px;
-    color: #011C40;
+    color: #011c40;
   }
 
   .site-list__item--direction {
@@ -2330,7 +2286,6 @@ body {
 
   .booking {
     padding-top: 60px;
-    padding-bottom: 36px;
     padding-left: 14px;
     padding-right: 14px;
     padding-bottom: 17px;
@@ -2486,11 +2441,11 @@ body {
   }
 
   .logo-menu--closed {
-    fill: #F9FBFD;
+    fill: #f9fbfd;
   }
 
   .logo-menu--opened {
-    fill: #011C40;
+    fill: #011c40;
   }
 
   .nav__list {
