@@ -7,6 +7,14 @@
 
   navMain.classList.remove('main-nav--nojs');
 
+  document.addEventListener('click', (e)=>{
+    const click = e.composedPath().includes(navToggle);
+    if (!click) {
+      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add('main-nav--closed');
+    }
+  });
+
   if (navToggle) {
     navToggle.addEventListener('click', function () {
       if (navMain.classList.contains('main-nav--closed')) {
@@ -16,7 +24,6 @@
       } else {
         navMain.classList.add('main-nav--closed');
         navMain.classList.remove('main-nav--opened');
-        stopScroll.classList.remove('body--scroll');
       }
     });
   }
