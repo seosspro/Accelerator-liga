@@ -100,13 +100,17 @@
   .main-nav--opened .main-nav__wrapper {
     position: absolute;
     top: 0;
-    right: -15px;
+    right: -35px;
     width: 100%;
-    min-height: 565px;
+    min-height: 100vh;
     padding-top: 73px;
     padding-left: 15px;
     background-color: #f9fbfd;
     z-index: 10;
+  }
+
+  body.main-nav--opened {
+    overflow: hidden;
   }
 
   .main-nav--nojs .main-nav__toggle {
@@ -131,4 +135,5 @@
   left: 0;
   right: 0;
   background: rgba(0, 43, 102, 0.5);
+  overflow: hidden;
 }

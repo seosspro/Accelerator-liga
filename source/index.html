@@ -17,7 +17,7 @@
   <link rel="preload" as="font" href="fonts/montserrat-semibold.woff2">
 </head>
 
-<body>
+<body class='body'>
   <svg style="display:none">
     <symbol viewBox="0 0 70 38" id="logo">
       <path fill-rule="evenodd" clip-rule="evenodd"
@@ -94,25 +94,28 @@
           </svg>
           <span class="visually-hidden">Логотип оператора круизов в Антарктику</span>
         </a>
-        <nav class="main-nav main-nav--closed main-nav--nojs">
-          <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
-              <li class="site-list__item site-list__item--advantage">
-                <a class="site-list__link" href="#">Преимущества</a>
-              </li>
-              <li class="site-list__item site-list__item--direction">
-                <a class="site-list__link" href="#">Направления</a>
-              </li>
-              <li class="site-list__item site-list__item--cruises">
-                <a class="site-list__link" href="#">Ближайшие круизы</a>
-              </li>
-              <li class="site-list__item site-list__item--contacts">
-                <a class="site-list__link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <div class="page-header__overlay">
+          <nav class="main-nav main-nav--closed main-nav--nojs">
+            <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть
+                меню</span></button>
+            <div class="main-nav__wrapper">
+              <ul class="main-nav__list site-list">
+                <li class="site-list__item site-list__item--advantage">
+                  <a class="site-list__link" href="index.html">Преимущества</a>
+                </li>
+                <li class="site-list__item site-list__item--direction">
+                  <a class="site-list__link" href="index.html">Направления</a>
+                </li>
+                <li class="site-list__item site-list__item--cruises">
+                  <a class="site-list__link" href="index.html">Ближайшие круизы</a>
+                </li>
+                <li class="site-list__item site-list__item--contacts">
+                  <a class="site-list__link" href="index.html">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
       </header>
 
       <div class="about-us">
@@ -135,9 +138,11 @@
         <div class="description__wrapper">
           <div class="description__wrapper-text">
             <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
-            <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш
+            <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром
+              Антарктики. Наш
               круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть:
-              ледяные&nbsp;айсберги,&nbsp;несколько видов пингвинов, китов, морских котиков&nbsp;и многое другое.</p>
+              ледяные&nbsp;айсберги,&nbsp;несколько видов пингвинов, китов, морских котиков&nbsp;и многое
+              другое.</p>
           </div>
           <div class="description__wrapper-img">
             <picture>
@@ -208,7 +213,8 @@
                 </div>
                 <h3>Экскурсионные туры&nbsp;на&nbsp;Zodiac</h3>
                 <p>
-                  Экскурсионные&nbsp;туры к&nbsp;берегам Антарктиды совершаются на оборудованных лодках&nbsp;типа Zodiac
+                  Экскурсионные&nbsp;туры к&nbsp;берегам Антарктиды совершаются на оборудованных
+                  лодках&nbsp;типа Zodiac
                   в&nbsp;сопровождении опытных экскурсоводов.
                 </p>
               </li>
@@ -777,23 +783,23 @@
 
               <div class="form__field">
                 <label class="visually-hidden" for="name">Введите Ваше имя</label>
-                <input id="name" type="text" name="name" placeholder="Валерия" required>
+                <input id="name" type="text" name="name" placeholder="Имя" required>
               </div>
 
               <div class="form__field">
                 <label class="visually-hidden" for="phone">Введите Ваш номер телефона</label>
-                <input id="phone" type="tel" name="phone" placeholder="+7 (999) 999-99-99"
-                  data-mask="+7 (___) ___-__-__" required>
+                <input id="phone" type="tel" name="phone" placeholder="Телефон" data-mask="+7 (___) ___-__-__" required>
               </div>
 
               <div class="form__field">
                 <label class="visually-hidden" for="e-mail">Введите Ваш e-mail</label>
-                <input id="e-mail" type="email" name="e-mail" value="" placeholder="grishaewa.lera@gmail.com" required>
+                <input id="e-mail" type="email" name="e-mail" value="" placeholder="Email" required>
               </div>
 
               <div class="form__field form__field-check">
                 <input class="visually-hidden form__checkbox" id="check" type="checkbox" name="check" required>
-                <label tabindex='0' for="check">Я согласен на обработку моих&nbsp;персональных&nbsp;данных</label>
+                <label tabindex='0' for="check">Я согласен на обработку
+                  моих&nbsp;персональных&nbsp;данных</label>
               </div>
               <button class="form__button" id="btn" type="submit" aria-label="Оставить заявку"><span>Оставить
                   заявку</span></button>
@@ -880,7 +886,8 @@
                   <a class="navigation-list__link navigation-list__link--booking" href="#">Направления</a>
                 </li>
                 <li class="navigation-list__item">
-                  <a class="navigation-list__link navigation-list__link--catalog" href="#">Ближайшие круизы</a>
+                  <a class="navigation-list__link navigation-list__link--catalog" href="#">Ближайшие
+                    круизы</a>
                 </li>
                 <li class="navigation-list__item">
                   <a class="navigation-list__link navigation-list__link--contacts" href="#">Контакты</a>
