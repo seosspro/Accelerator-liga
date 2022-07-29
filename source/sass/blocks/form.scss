@@ -137,6 +137,19 @@
   cursor: pointer;
 }
 
+.form__checkbox:focus + label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 18px;
+  height: 18px;
+
+  background-color: rgba(249, 251, 253, 0.8);
+  cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
   .form__checkbox + label::before {
     width: 20px;

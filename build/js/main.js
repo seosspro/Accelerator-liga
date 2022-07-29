@@ -7,13 +7,25 @@
 
   navMain.classList.remove('main-nav--nojs');
 
+  if (navMain) {
+    document.querySelector('.hamburger').style.visibility = 'hidden';
+  }
+
   document.addEventListener('click', (e)=>{
     const click = e.composedPath().includes(navToggle);
     if (!click) {
       navMain.classList.remove('main-nav--opened');
       navMain.classList.add('main-nav--closed');
+      stopScroll.classList.remove('body--scroll');
     }
   });
+
+  document.onkeydown = function Esc(e) {
+    if (e.keyCode === 27) {
+      navMain.classList.remove('main-nav--opened');
+      navMain.classList.add('main-nav--closed');
+    }
+  };
 
   if (navToggle) {
     navToggle.addEventListener('click', function () {
