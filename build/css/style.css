@@ -440,8 +440,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   width: 100%;
   max-width: 100%;
   padding-top: 35px;
@@ -600,6 +598,8 @@ li a {
   margin: 0;
   padding: 0;
   list-style: none;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .site-list a {
